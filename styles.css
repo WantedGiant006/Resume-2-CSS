@@ -1,0 +1,528 @@
+body{
+    background-color: #191869;
+background-image: linear-gradient(180deg, #0d0c41 2%, #072755 35%, #083476 57%, #0a2757 85%, #060642 100%);
+}
+
+/* First Page */
+
+#first-page{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+h1.heading1{
+    color: white;
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
+    text-align: center;
+     @media(max-width:480px){
+        font-size: 3rem;
+        position: relative;
+        top: 100px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        font-size: 4rem;
+    }
+}
+h3.subheading1{
+    color: #ffbd6d;
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+     @media(max-width:480px){
+        font-size: x-large;
+        position: relative;
+        top: 100px
+    }
+}
+
+.saturn{
+    text-align: end;
+     @media(max-width:480px){
+       object-fit: scale-down;
+       width:100%;
+     }  
+    @media(max-width:1200px) and (min-width: 600px){
+        padding: 50px 0 0 0;
+    }
+}
+.red-planet{
+    text-align: start;
+     @media(max-width:480px){
+        object-fit: fill;
+        width: 100%;
+        position: relative;
+        top: 100px
+    }
+}
+.constellation{
+    position: relative;
+    bottom: 150px;
+    text-align: center; 
+     @media(max-width:480px){
+        visibility: hidden;
+    } 
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        top: 0px;
+    }
+}
+
+
+/* Second Page */
+
+#second-page{
+    padding: 150px 100px auto 150px;
+    margin: 50px 0 150px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.grid-container-1{
+    display: grid;
+    grid-template-rows: 0.005fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.galaxy{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    top: 0px;
+    left: 100px;
+     @media(max-width:1200px){
+        visibility: hidden;
+    } 
+}
+.profile{
+    grid-area: 1/2/2/3; 
+    border-radius: 50%;
+    position: relative; 
+    z-index: 1; 
+    top: 40px; 
+    left: 150px; 
+     @media(max-width:480px){
+        position: relative;
+        left: 60px;
+    } 
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: 200px;
+    }
+}
+.bubble{
+    grid-area: 1/2/2/3;
+    position: relative; 
+    z-index: 2; 
+    top: 20px; 
+    left: 120px;
+     @media(max-width:480px){
+        position: relative;
+        left: 30px;
+    } 
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: 160px;
+    }
+}
+.earth{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    right: 200px;
+    transform: rotate(180deg);
+     @media(max-width:1200px){
+        visibility: hidden;
+    } 
+}
+.hello{
+    grid-area: 2/2/3/3;
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 100px;
+     @media(max-width:480px){
+        position: relative; 
+        left: 30px;  
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: 170px;
+    }
+}
+.intro{
+    grid-area: 2/1/3/4;
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+    position: relative;
+    top: 175px;   
+     @media(max-width:480px){
+        font-size: 1.3rem;
+        position: relative; 
+        right: 260px;  
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -100px;
+    }
+}
+
+/* Third Page */
+
+
+/* Section One */
+#third-page-1{
+    padding: 0px 100px 150px 150px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    @media(max-width:1200px) and (min-width: 600px){
+        padding: 1px 100px 0px 150px;
+    }
+}
+.grid-container-2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media(max-width: 600px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+.education{
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+    grid-area: 1/2/2/3;
+     @media(max-width:480px){
+       grid-area: 1/1/2/2; 
+       position: relative;
+       left: -70px; 
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -100px;
+    }
+}
+.school{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: 2/1/3/2;
+    position: relative;
+    top: 20px;
+     @media(max-width:480px){
+        font-size: 2rem;
+        grid-area:2/1/3/2 ;
+        position: relative;
+        left: -70px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -80px;
+    }
+}
+.college{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: 2/3/2/4;
+    position: relative;
+    top: 20px;
+     @media(max-width:480px){
+        font-size: 2rem;
+        grid-area:4/1/5/2 ;
+        position: relative;
+        top: 120px;
+        left: -70px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -80px;
+    }
+}
+.rocket{
+    text-align: center;
+    grid-area: 3/2/4/3;
+    position: relative;
+    left: 20px;
+    bottom: 140px;
+     @media(max-width:480px){
+        font-size: 2rem;
+        grid-area:3/1/4/3 ;
+        transform: rotate(90deg);
+        object-fit: scale-down;
+        width: 70%;
+        position: relative;
+        top: 70px;
+        left: -35px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -80px;
+        bottom: 170px;
+    }
+}
+
+
+/* Section Two */
+
+#third-page-2{
+    padding: 0px 100px 150px 150px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.grid-container-3{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media(max-width: 600px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+
+}
+.hobbies{
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+    grid-area: 1/2/2/3;
+    position: relative;
+    top: 100px;
+     @media(max-width:480px){
+        grid-area: 1/1/2/2;
+        position: relative;
+        left: -50px;
+     }
+     @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -80px;
+    }
+}
+.mic{
+    grid-area: 2/1/3/2;
+    border-radius: 50%;
+    border: 10px solid;
+    position: relative;
+ /* 1899px width:   
+    top: 40px;
+    left: 260px; */
+    top: 40px;
+    left: 120px;
+     @media(max-width:480px){
+        grid-area:2/1/3/2;
+        position: relative;
+        top: 80px;
+        left: -40px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -70px;
+        top: 70px;
+    }
+
+}
+.sketching-pic{
+    grid-area: 2/3/2/4;
+    border-radius: 100%;
+    border: 10px solid;
+    position: relative;
+ /* 1899px width:
+    top: 40px;
+    left: 85px; */
+    top: 40px;
+    left: 100px;
+     @media(max-width:480px){
+        grid-area:4/1/5/2 ;
+        position: relative;
+        top: 20px;
+        left:-40px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -70px;
+        top: 70px;
+    }
+
+}
+.singing{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: 3/1/4/2;
+    position: relative;
+ /* 1899px width:
+    top: 0px;
+    left: 80px; */
+     @media(max-width:480px){
+        grid-area:3/1/4/2 ;
+        position: relative;
+        top: 20px;
+        left:-50px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -70px;
+        top: 30px;
+    }
+
+}
+.sketching{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: 3/3/4/4;
+    position: relative;
+ /* 1899px width:
+    top: 0px;
+    right: 85px; */
+    right: 15px;
+     @media(max-width:480px){
+        grid-area:4/1/5/2 ;
+        position: relative;
+        top: 160px;
+        left:-50px;
+    }
+    @media(max-width:1200px) and (min-width: 600px){
+        position: relative;
+        left: -70px;
+        top: 30px;
+    }
+}
+
+/* Fourth Page */
+#fourth-page{
+    padding: 0;
+    margin: 100px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.other-works{
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: left;
+    padding: 0 0 0 100px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+     @media(max-width:1200px){
+        font-size: 4rem;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        right: 50px;
+    }
+}
+.work-titles{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 20px;
+}
+.work-texts{
+    color: #ffcc99;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: 20px;
+}
+.work-img{
+    border-radius: 10%;
+}
+
+/* Fifth Page */
+#fifth-page{
+    padding: 0;
+    margin: 100px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.touch{
+    color: white; 
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+}
+.text{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.contact{
+    color: #feb11e;
+    font-family: "Changa", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+.satellite{
+    position: relative;
+    bottom: 400px;
+    left: 1100px;
+}
+
+/* Footer */
+#footer{
+    padding: 0;
+    margin: 0;
+}
+.footer-links{
+    color: white !important;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 20px;
+}

@@ -1,0 +1,44 @@
+.contact{
+    font-family: "Asap", sans-serif;
+    font-size: 5rem;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #C5FFF8;
+}
+.row{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 265px;
+}
+.heading{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #33186B;
+}
+.content{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    color: #33186B;
+}
+body{
+    height: 100%;
+    background-color: #33186b;
+    background-image: linear-gradient(180deg, #33186b 2%, #96efff 100%);
+    background-repeat: no-repeat;
+
+}
+.phone-number{
+    padding-bottom: 20px;
+}
+.email{
+    padding-bottom: 20px;
+}
+.header{
+    padding: 50px 0px 25px 0px;
+}
